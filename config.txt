@@ -1,0 +1,56 @@
+# Config file for GL_search.py
+
+# Paths to reduction files 
+# (the code is structured to work on the file being in the grandparent directory not parent so make sure its in the Reduction folder)
+
+file_templates = [
+    'OB0002/Reduction files/FINALrun0008_{band}.dat',
+    'OB0003/Reduction_files/FINALrun0009_{band}.dat',
+    'OB0004/Reduction_files/FINALrun0010_{band}.dat',
+    'OB0005/Reduction_files/FINALrun0008_{band}.dat',
+    'OB0005_2/Reduction_files/FINALrun0008_{band}.dat',
+    'OB0008/Reduction_files/FINALrun0007_{band}.dat',
+    'OB0009/Reduction_files/FINALrun0009_{band}.dat',
+    'OB0010/Reduction_files/FINALrun0010_{band}.dat',
+    'OB0029/Reduction_files/FINALrun0011_{band}.dat',
+    'OB0030/Reduction_files/FINALrun0012_{band}.dat',
+    'OB0001/Reduction_files/FINALrun0007_{band}.dat',
+    'OB0006/Reduction_files/FINALrun0009_{band}.dat',
+    'OB0007/Reduction_files/FINALrun0010_{band}.dat',
+    'OB0011/Reduction_files/FINALrun0011_{band}.dat',
+    'OB0012/Reduction_files/FINALrun0012_{band}.dat',
+    'OB0014/Reduction_files/FINALrun0009_{band}.dat',
+    'OB0013/Reduction_files/FINALrun0013_{band}.dat',
+    'OB0016/Reduction_files/FINALrun0007_{band}.dat',
+    'OB0015/Reduction_files/FINALrun0013_{band}.dat',
+    'OB0017/Reduction_files/FINALrun0007_{band}.dat',
+    'OB0018/Reduction_files/FINALrun0007_{band}.dat',
+    'OB0019/Reduction_files/FINALrun0006_{band}.dat',
+    'OB0020/Reduction_files/FINALrun0020_{band}.dat',
+    'OB0021/Reduction_files/FINALrun0020_{band}.dat']
+
+
+# Filters to run the GL search on
+bands = ["u", "g", "r", "i", "z"]
+
+# Orbital parameters (PB in days and tasc in MJD)
+PB = 0.3608934817
+tasc = 56047.5490643
+
+# Phase range for boxcar search
+phase_min = 0.72
+phase_max = 0.78
+
+# Boxcar width range
+min_width = 0.01
+max_width = 0.02
+
+# Boxcar search resolution
+n_phase = 100
+n_width = 100
+
+# Number of bins
+n_bins = 50
+
+# Output folder
+output_dir = "GL_binning_plots_gr"
